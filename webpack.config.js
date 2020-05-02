@@ -11,6 +11,9 @@ module.exports = {
   },
   mode: 'development', // allow to have more informations about run time error
   devtool: 'inline-source-map',
+  devServer: {
+    contentBase: '/dist',
+  },
   output: {
     filename: '[name].bundle.js', // [name] take dynamically name used before `.bundle.js` => `app.bundle.js` and so on
     path: path.resolve(__dirname, 'dist'),
