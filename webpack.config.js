@@ -9,7 +9,8 @@ module.exports = {
     app: './src/index.js',
     profile: './src/profile.js',
   },
-  mode: 'development',
+  mode: 'development', // allow to have more informations about run time error
+  devtool: 'inline-source-map',
   output: {
     filename: '[name].bundle.js', // [name] take dynamically name used before `.bundle.js` => `app.bundle.js` and so on
     path: path.resolve(__dirname, 'dist'),
