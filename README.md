@@ -29,6 +29,33 @@ There are a lot of loaders that you can intall and use inside `webpack.config.js
 
 These allow to manage different types of files.
 
+### Plugin
+
+#### HtmlWebpackPlugin
+
+This plugin, used to copy `index.html` inside `dist/` folder, is broken with `ts-loader` (https://github.com/jantimon/html-webpack-plugin/issues/1097):
+
+```
+Types of parameters 'compiler' and 'compiler' are incompatible.
+
+ TS2322: Type 'this' is not assignable to type 'HtmlWebpackPlugin'.
+```
+
+Temporarily replace `ts-loader` with `awesome-typescript-loader` it in project.
+
+This one emit another type of errors, but works:
+
+```
+ERROR in [at-loader] ./node_modules/@types/uglify-js/index.d.ts:9:30 
+    TS2307: Cannot find module 'source-map'.
+
+ERROR in [at-loader] ./node_modules/@types/webpack-sources/index.d.ts:10:62 
+    TS2307: Cannot find module 'source-map'.
+
+ERROR in [at-loader] ./node_modules/@types/webpack/index.d.ts:47:30 
+    TS2307: Cannot find module 'source-map'.
+```
+
 ## Resources
 
 - https://www.youtube.com/watch?v=gm9kM-ZM5rE&list=PLRLvivu3C8b1J_sGK4qmXTDkoHInSXYBy&index=1 (and all videos)
