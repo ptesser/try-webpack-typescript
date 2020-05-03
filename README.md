@@ -15,6 +15,7 @@ npm i --save-dev webpack-cli
 
 Run `npx webpack` generate a `dist/` with inside `main.js` file generated from `src/index.js`.
 
+------------------------------------
 
 ### Config
 
@@ -23,13 +24,18 @@ Add `webpack.config.js` in main root to customize Webpack.
 This file will automatically call by Webpack using `npx webpack --config webpack.config.js` command.
 
 
-### Loader
+------------------------------------
+
+### Loaders
 
 There are a lot of loaders that you can intall and use inside `webpack.config.js`.
 
 These allow to manage different types of files.
 
-### Plugin
+
+------------------------------------
+
+### Plugins
 
 #### HtmlWebpackPlugin
 
@@ -55,6 +61,8 @@ ERROR in [at-loader] ./node_modules/@types/webpack-sources/index.d.ts:10:62
 ERROR in [at-loader] ./node_modules/@types/webpack/index.d.ts:47:30 
     TS2307: Cannot find module 'source-map'.
 ```
+
+------------------------------------
 
 ## Resources
 
