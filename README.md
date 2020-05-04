@@ -64,6 +64,10 @@ ERROR in [at-loader] ./node_modules/@types/webpack/index.d.ts:47:30
 
 ------------------------------------
 
+## Extensive Docs about TypeScript
+
+- [Functors](./docs/FUNCTORS.md)
+
 ## Resources
 
 - https://www.youtube.com/watch?v=gm9kM-ZM5rE&list=PLRLvivu3C8b1J_sGK4qmXTDkoHInSXYBy&index=1 (and all videos)

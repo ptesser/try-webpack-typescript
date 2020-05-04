@@ -8,6 +8,7 @@ module.exports = {
   entry: {
     app: './src/index.ts',
     utils: './src/utils.ts',
+    functors: './src/functors.ts',
   },
   mode: 'development', // allow to have more informations about run time error
   devtool: 'inline-source-map',
